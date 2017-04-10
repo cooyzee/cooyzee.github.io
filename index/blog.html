@@ -7,6 +7,9 @@
     <title>Cooyzee's</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/component/animate.min.css">
+    <link rel="stylesheet" href="../css/component/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -39,27 +42,51 @@
         </ul>
         <hr>
         <div>
-            <div class="date">April 5, 5 pm</div>
-            <div>
-                <h2>node-sass 安装失败</h2>
-                <p>使用淘宝镜像：<code>--registry=https://registry.npm.taobao.org</code></p>
-                <p>指定sass binary site：<code>SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/</code></p>
-                <p>Windows 下失败了？试试
-                    <code>npm install node-sass --sass-binary-site=</code>；或者修改npm配置文件，参考目录：
-                    <code>C:\Program Files\nodejs\node_modules\npm</code>
-                </p>
-            </div>
+            <div class="date">April 8, 11AM</div>
+            <h2>Cubic Bezier</h2>
+            <p>贝塞尔曲线 <mark>Bezier Curve</mark> , from Pierre Bézier, 1962.</p>
+            <p>
+                <img src="../img/bezier/bezier0.svg" width="100%" alt="bezier">
+                用平常话来说， n 阶的贝塞尔曲线，即双 n-1 阶贝塞尔曲线之间的插值。
+            </p>
+            <p>
+                线性曲线：线性贝塞尔曲线函数中的t会经过由P0至P1的B（t）所描述的曲线。例如当t=0.25时，B（t）即一条由点P0至P1路径的四分之一处。就像由0至1的连续t，B（t）描述一条由P0至P1的直线。
+                <br>
+                二次曲线：为建构二次贝塞尔曲线，可以中介点Q0和Q1作为由0至1的t：1.由P0至P1的连续点Q0，描述一条线性贝塞尔曲线。2.由P1至P2的连续点Q1，描述一条线性贝塞尔曲线。3.由Q0至Q1的连续点B（t），描述一条二次贝塞尔曲线。
+            </p>
+            <p class="text-center">
+                <img src="../img/bezier/bezier1.gif" alt="bezier">
+                <img src="../img/bezier/bezier2.gif" alt="bezier">
+                <img src="../img/bezier/bezier3.gif" alt="bezier">
+                <img src="../img/bezier/bezier4.gif" alt="bezier">
+                <img src="../img/bezier/bezier5.gif" alt="bezier">
+            </p>
         </div>
         <div>
-            <div class="date">April 5, 10 am</div>
-            <div>
-                <h2>PM2 Quick Start</h2>
-                <p>
-                    Advanced, production process manager for Node.js
-                    <a href="http://pm2.keymetrics.io/docs/usage/quick-start/">Quick start</a>.
-                </p>
-                <p><code>$ pm2 start app.js</code></p>
-            </div>
+            <div class="date">April 5, 5PM</div>
+            <h2>node-sass 安装失败</h2>
+            <p>使用淘宝镜像：<code>--registry=https://registry.npm.taobao.org</code></p>
+            <p>指定sass binary site：<code>SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/</code></p>
+            <p>Windows 下失败了？试试
+                <code>npm install node-sass --sass-binary-site=</code>；或者修改npm配置文件，参考目录：
+                <code>C:\Program Files\nodejs\node_modules\npm</code>
+            </p>
+        </div>
+        <div>
+            <div class="date">April 5, 10AM</div>
+            <h2>PM2 Quick Start</h2>
+            <p>
+                Advanced, production process manager for Node.js
+                <a href="http://pm2.keymetrics.io/docs/usage/quick-start/">Quick start</a>.
+            </p>
+            <p><code>$ pm2 start app.js</code></p>
+        </div>
+        <div>
+            <div class="date">Older</div>
+            <h2>Bla bla bla</h2>
+            <p>
+                <button class="animated-button"><span>Hover</span></button>
+            </p>
         </div>
     </div>
 </div>
@@ -80,5 +107,9 @@
         </div>
     </div>
 </footer>
+<div class="back-to-top animated" id="back-to-top">
+    <a href="/"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="../js/common.min.js"></script>
 </body>
 </html>
