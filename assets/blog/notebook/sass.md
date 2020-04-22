@@ -8,3 +8,39 @@
 > SCSS (Sassy CSS)，是Sass3引入新的语法，其语法完全兼容 CSS3，并且继承了Sass的强大功能。也就是说，任何标准的CSS3样式表都是具有相同语义的有效的SCSS文件。
 > SCSS需要使用分号和花括号而不是换行和缩进。SCSS对空白符号不敏感，其实就和css3语法一样，其后缀名是分别为 .scss。
 
+## some rules that I haven't used
+
+* 父选择器 `&`，作为首字符接后缀可生成复合选择器
+```
+.navbar {
+  &-item {     =>    .navbar-item {}
+  }
+}
+```
+
+* 将属性嵌套在命名空间中
+```
+{
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+```
+
+* 占位符选择器 %，用@extend指令调用
+
+* 多重延伸，继续延伸
+```
+@extend .error, .attention;
+@extend .error; @extend .attention;
+```
+
+* @at-root
+
+* output style
+  * nested
+  * expanded
+  * compact
+  * compressed
