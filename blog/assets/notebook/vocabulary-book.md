@@ -40,3 +40,10 @@ Dart2成为强类型语言，Flutter用的就是Dart
 
 ## `SaaS`
 software as a service 软件及服务
+
+## `TDZ`
+Temporal dead zone  
+```
+ReferenceError: Cannot access 'a' before initialization
+变量提升也有优先级：函数声明 > arguments > 变量声明
+```
