@@ -39,7 +39,7 @@ Iterator 接口主要供 `for...of` 消费
 Dart2成为强类型语言，Flutter用的就是Dart
 
 ## `SaaS`
-software as a service 软件及服务
+software as a service 软件即服务
 
 ## `TDZ`
 Temporal dead zone  
@@ -55,10 +55,7 @@ typeof检测未声明的变量不会抛出错误，会返回 undefined
 
 1. 一般来说，非阻塞性的任务采取同步方式执行，直接在主线程执行栈完成。
 2. 阻塞性的任务都会采用异步来执行，异步工作一般会交给其他线程完成，探后回调函数会放到事件队列中。
-![](https://graph.baidu.com/resource/121e5e8811bd0eeccffa401592192053.jpg)
 
 macrotask: 主代码块 > setImmediate > MessageChannel > setTimeout / setInterval
-![](https://graph.baidu.com/resource/121de5444e58c1602b49301591932015.jpg)
 
 microtask: process.nextTick > Promise = MutationObserver
-![](https://graph.baidu.com/resource/1216777ea7d06546e449901592192194.jpg)
