@@ -7,3 +7,10 @@
 n+4 大于等于四  
 2n even 偶数  
 2n-1 odd 奇数
+
+## BFC
+Block Formatting contexts 块级格式化上下文
+主要作用 就是消除外边距重叠和元素浮动
+
+## 两端对齐
+text-align: justify
