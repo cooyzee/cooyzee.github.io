@@ -7,3 +7,4 @@ latest update: Aug 17
 * [git](#/notebook/git)
 * [css](#/notebook/css)
 * [sass](#/notebook/sass)
+* [vue](#/notebook/vue)
