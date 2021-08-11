@@ -66,5 +66,6 @@ function getCookie(cname) {
     }
   }
   return "";
+  // 
 }
 ```
